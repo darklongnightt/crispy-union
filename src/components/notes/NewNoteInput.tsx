@@ -1,10 +1,11 @@
 import React, { ChangeEvent, useState } from "react";
+import { connect } from 'react-redux';
+import { addNote } from '../../store/actions/noteActions';
 
-interface NewNoteInputProps {
-  addNote(note: string): void;
-}
+const mapDispatchToProps = { addNote };
+type Props = typeof mapDispatchToProps;
 
-export const NewNoteInput: React.FC<NewNoteInputProps> = ({ addNote }) => {
+const NewNoteInput: React.FC<Props> = props => {
   const [note, setNote] = useState("");
 
   const updateNote = (event: ChangeEvent<HTMLInputElement>) => {
@@ -12,7 +13,7 @@ export const NewNoteInput: React.FC<NewNoteInputProps> = ({ addNote }) => {
   };
 
   const onAddNote = () => {
-    addNote(note);
+    props.addNote(note);
     setNote("");
   };
 
@@ -28,3 +29,5 @@ export const NewNoteInput: React.FC<NewNoteInputProps> = ({ addNote }) => {
     </>
   );
 };
+
+export default connect(null, mapDispatchToProps)(NewNoteInput);
