@@ -1,3 +1,5 @@
+import { Action } from "../actions/noteActions"
+
 export interface NotesState {
   notes: string[];
 }
@@ -5,8 +7,6 @@ export interface NotesState {
 const initialState = {
   notes: [],
 };
-
-type Action = { type: string; payload: string };
 
 export const notesReducer = (state: NotesState = initialState, action: Action) => {
   switch (action.type) {
@@ -18,6 +18,9 @@ export const notesReducer = (state: NotesState = initialState, action: Action) =
 
     case "EDIT_NOTE":
       return { ...state, notes: [...state.notes, state.notes[state.notes.findIndex(note => note === action.payload)] = "changed"] };
+
+    case "SET_NOTES":
+      return { ...state, notes: [...action.payload] }
 
     default:
       return state;
