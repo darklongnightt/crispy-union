@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Footer from "./components/layout/Footer";
 import Navbar from "./components/layout/Navbar";
 import NoteList from "./components/notes/NoteList";
-import About from "./components/pages/About";
+import Location from "./components/pages/Location";
 import Home from "./components/pages/Home";
 import Menu from "./components/pages/Menu";
 
@@ -14,7 +14,7 @@ function App() {
       <div className="main">
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
+          <Route path="/location" component={Location} />
           <Route path="/menu" component={Menu} />
           <Route path="/notes" component={NoteList} />
         </Switch>

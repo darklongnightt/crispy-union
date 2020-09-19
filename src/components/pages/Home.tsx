@@ -9,6 +9,14 @@ const Home = () => {
             <div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid deleniti non quibusdam! Beatae illum dolor saepe assumenda quisquam enim hic fugiat. Rerum, similique! Perferendis est, rem placeat adipisci consequuntur consectetur?
             </div>
+
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid deleniti non quibusdam! Beatae illum dolor saepe assumenda quisquam enim hic fugiat. Rerum, similique! Perferendis est, rem placeat adipisci consequuntur consectetur?
+            </div>
+
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid deleniti non quibusdam! Beatae illum dolor saepe assumenda quisquam enim hic fugiat. Rerum, similique! Perferendis est, rem placeat adipisci consequuntur consectetur?
+            </div>
         </React.Fragment>
     )
 }
