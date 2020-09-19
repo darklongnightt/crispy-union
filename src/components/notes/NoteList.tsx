@@ -3,6 +3,7 @@ import { bindActionCreators, Dispatch } from 'redux';
 import { connect } from 'react-redux';
 import { deleteNote, editNote, loadNotes } from '../../store/actions/noteActions';
 import { RootState } from '../../store/reducers/rootReducers';
+import NewNoteInput  from './NewNoteInput';
 
 const mapStateToProps = (state: RootState) => ({
     notes: state.notes.notes
@@ -25,6 +26,9 @@ const NoteList: React.FC<Props> = (props) => {
     props.loadNotes();
     return (
         <React.Fragment>
+            <hr />
+            <NewNoteInput />
+            <hr />
             <ul>
                 {props.notes.map(note => {
                     return (
