@@ -1,6 +1,6 @@
 .intro-container {
     position: fixed;
-    background: black;
+    background: #020806;
     top: 0;
     left: 0;
     width: 100%;
@@ -13,7 +13,8 @@
 
 .intro-slider {
     position: fixed;
-    background: var(--bg-primary);
+    background: url('../../assets/fire.gif');
+    background-repeat: repeat-x;
     top: 0;
     left: 0;
     width: 100%;
@@ -25,7 +26,6 @@
 }
 
 .intro-text {
-    background: black;
     overflow: hidden;
 }
 

@@ -5,9 +5,9 @@ import './IntroAnimations.css'
 const IntroAnimations = () => {
     useEffect(() => {
         const tl = gsap.timeline({ default: { ease: 'power1.out' } });
-        gsap.to(".intro-text span", { y: "0%", duration: 1, stagger: 0.25 });
-        gsap.to(".intro-slider", { y: "-100%", duration: 1.5, delay: 1.5 });
-        gsap.to(".intro-container", { y: "-100%", duration: 1.3, delay: 1.7 });
+        tl.to(".intro-text span", { y: "0%", duration: 1, stagger: 0.25 });
+        tl.to(".intro-slider", { y: "-100%", duration: 1.5, delay: 0.5 });
+        tl.to(".intro-container", { y: "-100%", duration: 0.8 }, '-=1.5');
     }, [])
 
     return (
