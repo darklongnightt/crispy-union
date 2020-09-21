@@ -1,0 +1,52 @@
+.footer-container {
+    min-height: 15vh;
+    width: 100%;
+    color: var(--bg-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand {
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    margin-left: 1rem;
+}
+
+.address {
+    margin: 0 3rem;
+}
+
+.social {
+    margin-right: 1rem;
+}
+
+.social img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0.3rem;
+}
+
+hr {
+    border: 0.1rem solid var(--bg-primary);
+    border-radius: 0.3rem;
+    width: 95%;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-container {
+        margin-bottom: 5rem;
+    }
+
+    .brand {
+        font-size: 2.5rem;
+    }
+
+    .address {
+        margin: 0 1rem;
+    }
+
+    .social img {
+        margin: 0;
+    }
+}

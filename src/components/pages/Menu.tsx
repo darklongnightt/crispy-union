@@ -1,9 +1,11 @@
 import React from 'react'
+import menu from '../../assets/menu.jpeg'
 
 const Menu = () => {
     return (
-        <div>
-            Menu page
+        <div className="flex-container">
+            <h2>Menu</h2>
+            <img src={menu} alt="" />
         </div>
     )
 }
