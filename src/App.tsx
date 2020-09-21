@@ -11,7 +11,7 @@ import IntroAnimations from "./components/layout/IntroAnimations";
 function App() {
   return (
     <BrowserRouter>
-      
+      <IntroAnimations />
       <Navbar />
       <div className="main">
         <Switch>
